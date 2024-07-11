@@ -1,0 +1,25 @@
+<h1>delete</h1>
+
+<form action="../deletedata/" method="post">
+{% csrf_token %}
+
+    Employee ID:<br>
+    <input name="id" value="{{ID}}" readonly>
+    <br><br>
+    Employee Name:<br>
+    <input name="name" value="{{name}}" readonly>
+    <br><br>
+    Phone:<br>
+    <input name="phone" value="{{phone}}" readonly>
+    <br><br>
+    Address:<br>
+    <input name="address" value="{{address}}" readonly>
+    <br><br>
+    Salary:<br>
+    <input name="salary" value="{{salary}}"readonly>
+    <br><br>
+
+    <p1>Are you sure to delete this data</p1>
+    <br>
+    <input type="submit" value="delete?id" name="save">
+</form>

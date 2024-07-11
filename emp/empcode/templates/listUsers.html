@@ -1,0 +1,24 @@
+<center>
+<h1>Users</h1>
+<p><a href="../add/">Add member{{users.length}}</a></p>
+<table border="1">
+<tr>
+    <th>Employee ID</th>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>address</th>
+    <th>salary</th>
+    <th>Action</th>
+</tr>
+{% for x in users %}
+<tr>
+    <td>{{ x.id }}</td>
+    <td>{{ x.name }}</td>
+    <td>{{ x.phone }}</td>
+    <td>{{ x.address }}</td>
+    <td>{{ x.salary }}</td>
+    <td><a href="../update?id={{x.id}}&name={{x.name}}&phone={{x.phone}}&address={{x.address}}&salary={{x.salary}}">Update</a> | <a href='../delete/'>Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+</center>

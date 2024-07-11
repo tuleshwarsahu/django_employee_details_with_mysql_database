@@ -1,0 +1,28 @@
+<center> <h1>Add User</h1>
+
+
+<form action="../save/" method="post">
+{% csrf_token %}
+Employee ID:<br>
+<input name="id">
+<br><br>
+Employee Name:<br>
+<input name="name">
+<br><br>
+Phone:<br>
+<input name="phone">
+<br><br>
+Address:<br>
+<input name="address">
+<br><br>
+Salary:<br>
+<input name="salary">
+<br><br>
+<input type="submit" value="Save" name="save">
+
+{{Message}}
+</form>
+<p>
+    <a href="../show/"  class="btn">show member</a>
+    </p>
+</center>

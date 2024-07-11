@@ -1,0 +1,25 @@
+<center>
+<h1>Update users</h1>
+
+<form action="../updatedata/" method="post">
+{% csrf_token %}
+
+Employee ID:<br>
+<input name="id" value="{{ID}}" readonly>
+<br><br>
+Employee Name:<br>
+<input name="name" value="{{name}}">
+<br><br>
+Phone:<br>
+<input name="phone" value="{{phone}}">
+<br><br>
+Address:<br>
+<input name="address" value="{{address}}">
+<br><br>
+Salary:<br>
+<input name="salary" value="{{salary}}">
+<br><br>
+<input type="submit" value="update" name="save">
+</form>
+</div>
+</center>
